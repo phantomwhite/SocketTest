@@ -6,7 +6,7 @@ from os.path import join, getsize
 
 
 def UploadInSocket(filename):
-    HOST = '192.168.2.216'
+    HOST = '192.168.2.109'
     PORT = 54321
     ADDR = (HOST,PORT)
     s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
