@@ -14,9 +14,11 @@ def tcplink(tcpClientSock,addr):
             print(e)
             tcpClientSock.close()
             break
+
     #s='Hi,you send me :[%s] %s' %(ctime(), data.decode('utf8'))
     print([ctime()], ':', total.decode('utf8'))
-    s = input('>')
+    #s = input('>')
+    s = 'just for test'
     tcpClientSock.send(s.encode('utf8'))
 
     tcpClientSock.close()
